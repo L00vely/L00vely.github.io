@@ -1,0 +1,22 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Outlook (PWA)
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn
+Icon=chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default
+StartupWMClass=crx_faolnafnngnfdaknnbpnkhgohbobgegn
+Actions=Abrir-calendario;Nuevo-evento;Nuevo-mensaje
+
+[Desktop Action Abrir-calendario]
+Name=Abrir calendario
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn --app-launch-url-for-shortcuts-menu-item=https://outlook.office.com/calendar
+
+[Desktop Action Nuevo-evento]
+Name=Nuevo evento
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn --app-launch-url-for-shortcuts-menu-item=https://outlook.office.com/calendar/deeplink/compose
+
+[Desktop Action Nuevo-mensaje]
+Name=Nuevo mensaje
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn --app-launch-url-for-shortcuts-menu-item=https://outlook.office.com/mail/deeplink/compose
