@@ -11,54 +11,51 @@
     <title>My portfolio</title>
 </head>
 <body>
-    <header role="heading">
+    <header role="heading" aria-label="Navigation menu">
         <nav role="navigation">
             <a href="#"><img src="src/imgs/icons/Logo.png" alt="Logo" role=""></a>
-            <ul role="presentation">
-                <li><a href="#info-section">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-
+            <ul role="presentation" class="large">
+                <li><a href="#info-section" class="hover">About</a></li>
+                <li><a href="#skills" class="hover">Skills</a></li>
+                <li><a href="#projects" class="hover">Projects</a></li>
             </ul>
         </nav>
     </header>
     <main role="main">
         <section id="info-section">
-            <div id="image-container" role="img" aria-label="photo of David Perales">
-                <img src="src/imgs/david.png" alt="Photo of David Perales">
+            <div class="photo-container">
+                <img src="src/imgs/david.png" alt="Photo of David Perales" role="img">
             </div>
-            <div id="introduction-text">
-                <h2 class="computer" id="welcome">HI THERE, I AM </h2>
-                <h1 class="name" id="name"><span>DAVID PERALES</span></h1>
-                <h2 class="computer" id="david-info">A <span>computer engineering student</span>  passionate about responsive web development and artificial intelligence</h2>
-                <div class="links" id="contact">
-                    <a href="https://www.linkedin.com/in/dpr-unam/" target="_blank" role="link"><img src="src/imgs/icons/icon-linkedin.png" alt="Link to Davids LinkedIn profile"></a>
-                    <a href="https://github.com/L00vely" target="_blank" role="link"><img src="src/imgs/icons/icon-github.png" alt="Link to Davids Github profile"></a>
-                    <a href="https://www.youtube.com/channel/UCh23-MSKwTgO_c7UcaD3CIQ" target="_blank" role="link"><img src="src/imgs/icons/icon-youtube.png" alt="Link to Davids Youtube channel"></a>
-                    <a href="https://dribbble.com/L00vely" target="_blank" role="link"><img src="src/imgs/icons/icon-dribbble.png" alt="Link to Davids Dribbble profile"></a>
-                </div>
-                <a href="mailto:peralesrodriguezdavid@gmail.com" class="email">peralesrodriguezdavid@gmail.com</a> 
-            </div>
+            
+            <h2 class="large" id="welcome">HI THERE, I AM </h2>
+            <h1 id="david-name"><span class="hover">DAVID PERALES</span></h1>
+            <h2 class="large" id="david-info">A <span class="hover">computer engineering student</span>  passionate about responsive web development and artificial intelligence</h2>
+            <ul class="links">
+                <li><a href="https://www.linkedin.com/in/dpr-unam/" target="_blank" role="link"><img src="src/imgs/icons/icon-linkedin.png" alt="Link to Davids LinkedIn profile"></a></li>
+                <li><a href="https://github.com/L00vely" target="_blank" role="link"><img src="src/imgs/icons/icon-github.png" alt="Link to Davids Github profile"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCh23-MSKwTgO_c7UcaD3CIQ" target="_blank" role="link"><img src="src/imgs/icons/icon-youtube.png" alt="Link to Davids Youtube channel"></a></li>
+                <li><a href="https://dribbble.com/L00vely" target="_blank" role="link"><img src="src/imgs/icons/icon-dribbble.png" alt="Link to Davids Dribbble profile"></a></li>
+            </ul>
+            <a href="mailto:peralesrodriguezdavid@gmail.com" class="hover email">peralesrodriguezdavid@gmail.com</a>
         </section>
+        
         <section id="principal-section">
-            <div id="left-grid">
+            <div id="left">
                 <div class="container" id="certificates">
-                    <button class="container-title"  role="button" aria-labelledby="Show certificates" id="button-certificates">
+                    <button class="container-title hover"   role="button" aria-labelledby="Show certificates" id="button-certificates">
                         CERTIFICATES
                     </button>
                     <div class="container-body" id="certificates-body">
-                        <article class="certificate"> 
+                        <article class="certificate-container"> 
                             <a href="https://www.credly.com/badges/53de31ae-acd5-4fc6-ade1-f1f48b84b077/linked_in_profile" target="_blank" role="link"><img src="src/imgs/icons/azure-logo.png" alt="Link to Davids Azure Fundamentals certificate"></a>
-                            <figcaption>AZ-900: MICROSOFT AZURE FUNDAMENTALS</figcaption>
                         </article>
-                        <article class="certificate"> 
+                        <article class="certificate-container"> 
                             <a href="https://www.linkedin.com/feed/update/urn:li:activity:7025285828809551872/" target="_blank" role="link"><img src="src/imgs/icons/google-cloud.png" alt="Link to Davids Google Cloud Computing Foundations certificate"></a>
-                            <figcaption>GOOGLE CLOUD COMPUTING FOUNDATIONS</figcaption>
                         </article>
                     </div>
                 </div>
                 <div class="container" id="skills">
-                    <button class="container-title"  role="button" aria-labelledby="Show skills" id="button-skills">
+                    <button class="container-title hover"  role="button" aria-labelledby="Show skills" id="button-skills">
                         SKILLS
                     </button>
                     <div class="container-body" role="presentation" id="skills-body">
@@ -106,23 +103,23 @@
                     </div>
                 </div>
             </div>
-            <div id="right-grid">
+            <div id="right">
                 <div class="container" id="projects">
-                    <button class="container-title"  role="button" aria-labelledby="Show skills" id="button-projects">
+                    <button class="container-title hover"  role="button" aria-labelledby="Show skills" id="button-projects">
                         PROJECTS
                     </button>
-                    <div class="container-body" id="projects-body">                
-                        <a href="https://github.com/L00vely/Ganbaty" target="_blank" role="link"><img src="src/imgs/icons/ganbaty.png" alt="Link to Ganbatys repository"></a>
-                        <div class="project-description computer">
-                            <h2>
+                    <div class="container-body" id="projects-body"> 
+                        <article class="project">
+                            <a href="https://github.com/L00vely/Ganbaty" target="_blank" role="link" class="project-logo"><img src="src/imgs/icons/ganbaty.png" alt="Link to Ganbatys repository"></a>
+                            <h2 class="project-description">
                                 It is a web application developed with Flask that uses Machine Learning algorithms for data analysis.
                             </h2>
-                        </div>
-                        
+                        </article>                         
                     </div>
                 </div>
                 
             </div>
+            
         </section>
         
     </main>
