@@ -5,17 +5,17 @@
 }
 
 body{
-    background-color: #fff;
+    background-color: #F5F3F5;
     font-family: 'Source Sans Pro', sans-serif;
     width: 100%;
 }
 
 h1{
-    font-size: 3.125rem;
+    font-size: 3.5rem;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 button{
@@ -33,7 +33,7 @@ button{
 button:hover {
     background: #000;
     box-shadow: 0px 2px 20px 10px #97B1BF;
-    color: #fff;
+    color: #F5F3F5;
 }
 
 .fa-arrow-down{
@@ -66,18 +66,18 @@ button:hover {
     border: 0px;
     text-align: center;
     width: 100%;
-    color: #fff;
-    background-color: #000;  
+    color: #F5F3F5;
+    background-color: #1B264F;  
     transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
     
 }
 
 .container-body{
-    display: none;
+    display: flex;
     padding: 2rem;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    background-color: #F5F3F5;
     justify-content: space-around;
 }
 
@@ -98,13 +98,17 @@ nav{
 
 nav a{
     text-decoration: none;   
-    color: #fff;
+    color: #F5F3F5;
 
 }
 
 nav li {
     display: inline-block;
     margin-right: 2rem;
+}
+
+strong{
+    color: #6d99db;
 }
 
 /*INFO SECTION*/
@@ -116,6 +120,8 @@ nav li {
     align-items: center;
     justify-items: center;
     gap: 2rem;
+    background-color: #1B264F;
+    color: #F5F3F5;
 }
 
 .photo-container{
@@ -159,7 +165,7 @@ nav li {
 
 .email{
     grid-area: email;
-    color: #000;
+    color: #F5F3F5;
     text-decoration: none;
 }
 
@@ -173,6 +179,7 @@ nav li {
     padding: 2rem 7rem;
     justify-content: space-around;
     gap: 2rem;
+    background-color: #26408B;
 }
 
 #left{
@@ -187,28 +194,19 @@ nav li {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
+    height: auto;
 }
 
 .certificate-container img{
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
+    height: auto;
     display: block;
-}
-
-.certificate-name{
-
-    color: #000;
-    font-size: 1rem;
-    text-align: center;
-  
 }
 
 
 /*SKILLS*/
 .skill{
-
     text-align: center;
 }
 
@@ -240,7 +238,7 @@ nav li {
 
 /*PROJECTS*/
 .project-description{
-    color: #fff;
+    color: #F5F3F5;
     margin: 2rem;
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.8);
@@ -253,6 +251,8 @@ nav li {
 #projects-body{
     background-color: #000;
 }
+
+
 
 /*MEDIA QUERIES*/
 
@@ -361,10 +361,7 @@ nav li {
         gap: 0.5rem;
     }
 
-
-    
     #david-name{
-
         justify-self: center;
         font-size: 2rem;
     }
@@ -392,7 +389,6 @@ nav li {
         display: none;
     }
 
-    
     .links li{
         display: inline-block;
         margin-right: 0.05rem;

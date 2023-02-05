@@ -1,19 +1,26 @@
 let certificatesButton = document.getElementById('button-certificates');
+
 let skillsButton = document.getElementById('button-skills');
+
 let projectsButton = document.getElementById('button-projects');
 
-const showHide = event =>{
+const hover = event =>{
     let container = event.target.parentNode;
-    let body = container.querySelector('.container-body');
-    if(body.style.display  === ''){
-        body.style.display = 'flex';
-        event.target.style.backgroundColor = "rgb(109, 153, 219)";
-    } else{
-        body.style.display = '';
-        event.target.style.backgroundColor = "rgb(0, 0, 0)";
-    }
+    console.log(container);
+    let title = container.querySelector('.container-title');
+    title.classList.add('hover');
 }
 
-certificatesButton.addEventListener('click', showHide);
-skillsButton.addEventListener('click', showHide);
-projectsButton.addEventListener('click', showHide);
+const unhover = event =>{
+    let container = event.target.parentNode;
+    console.log(container);
+    let title = container.querySelector('.container-title');
+    title.classList.remove('hover');
+}
+
+
+certificatesButton.addEventListener('mouseover', hover);
+
+skillsButton.addEventListener('mouseover', hover);
+
+projectsButton.addEventListener('mouseover', hover);
